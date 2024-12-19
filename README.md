@@ -34,7 +34,7 @@ scatter(date, ampdB, 10, frequency, 'filled');
 ylabel('Amplitude (dB)'); 
 set(gca, 'FontSize', 14)
 ```
-[FPOD image](/resources/example_plot_fpod.png)
+![FPOD image](/resources/example_plot_fpod.png)
 
 Note that we are essentially converting CPOD data from a very efficient file format to very inefficient one (MATLAB struct). This means that imported data can be take up a lot of memory. If this becomes an issue then the import function can import only sections of data. For example
 
