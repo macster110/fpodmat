@@ -1421,7 +1421,8 @@ public class FPODReader {
 		//		String filePath = "/Users/au671271/Library/CloudStorage/GoogleDrive-macster110@gmail.com/My Drive/PAMGuard_dev/CPOD/FPOD_NunBank/0866 NunBankB 2023 06 27 FPOD_6480 file0.FP1";
 
 //		String filePath = "D:\\DropBox\\PAMGuard_dev\\CPOD\\FPOD_NunBank\\0866 NunBankB 2023 06 27 FPOD_6480 file0.FP1";
-				String filePath = "D:\\DropBox\\PAMGuard_dev\\CPOD\\FPOD_NunBank\\0866 NunBankB 2023 06 27 FPOD_6480 file0.FP3";
+//		String filePath = "D:\\DropBox\\PAMGuard_dev\\CPOD\\FPOD_NunBank\\0866 NunBankB 2023 06 27 FPOD_6480 file0.FP3";
+		String filePath = "/Users/jdjm/Library/CloudStorage/Dropbox/PAMGuard_dev/CPOD/FPOD_NunBank/0866 NunBankB 2023 06 27 FPOD_6480 file0.FP3"; 
 
 		File fpfile = new File(filePath); 
 
@@ -1429,6 +1430,8 @@ public class FPODReader {
 
 		try {
 			importFile( fpfile, fpodData, 0, Integer.MAX_VALUE);
+			
+			System.out.println("Total number of clicks is: " +  fpodData.size()); 
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

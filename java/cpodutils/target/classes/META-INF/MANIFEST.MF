@@ -1,6 +1,6 @@
 Manifest-Version: 1.0
 Build-Jdk-Spec: 23
-Class-Path: lib/commons-lang3-3.17.0.jar
+Class-Path: lib/commons-lang3-3.17.0.jar lib/commons-io-2.18.0.jar
 Main-Class: org.pamguard.Main
 Created-By: Maven Integration for Eclipse
 
