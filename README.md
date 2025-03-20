@@ -1,7 +1,7 @@
 # FPOD and CPOD functions in Java and MATLAB
 
 ## Introduction
-CPODs and their successor, FPODs are underwater click loggers which can detect echolocation clicks from dolphins and porpoise and other transient sounds. The devices do not record sound, but instead record the time, frequency and host of other metrics for each detected transient sound. This greatly decreases the data volume that devices store during a typically deployment. CPOD and FPODs store their data in bespoke CP1 and FP1 files respectively. These are then processed to detect typical sequences of clicks which are indicative of a porpoise or dolphin. The resulting clicks _trains_ are stored in CP3 and FP3 files. 
+CPODs and their successor, FPODs, are underwater click loggers which can detect echolocation clicks from dolphins and porpoise and other transient sounds. The devices do not record sound, but instead record the time, frequency and host of other metrics for each detected transient sound. This greatly decreases the data volume that devices store during a typically deployment. CPOD and FPODs store their data in bespoke CP1 and FP1 files respectively. These are then processed to detect typical sequences of clicks which are indicative of a porpoise or dolphin. The resulting clicks _trains_ are stored in CP3 and FP3 files. 
 
 ## MATLAB CPOD FPOD library
 The _fpodmat_ library allow users to import CP1/CP3 and FP1/FP3 files. The library calls compiled java code to import the files. The code is based on the importer in [PAMGuard](https://www.pamguard.org/) which is much faster than a native MATLAB implementation. 
